@@ -1,0 +1,9 @@
+---
+applications:
+  - name: predix-postgres-ds
+    buildpack: java_buildpack
+    path: target/predix-jpa-cf-1.0.0.jar
+    memory: 512M
+services:
+    - postgres-ds
+    - redis-ds
